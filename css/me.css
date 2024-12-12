@@ -31,6 +31,7 @@ html{
     
 }
 
+/*Center the Words to the middle of the screen*/
 .welcome{
     text-align: center;
     color: var(--header-color);
@@ -63,6 +64,8 @@ html{
 
 /*Create Navigaton After top part to place nav correctly*/
 
+
+/*Header is used to align Nav bar at top with Cool affect*/
 header{
     position: fixed;
     top: 0;
@@ -76,6 +79,7 @@ header{
     border-bottom-right-radius: 30px;
 }
 
+/*Navigaiton Coding for clean Display*/
 nav ul{
     display: flex;
     justify-content: center;
@@ -124,29 +128,48 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
   }
+  
+/*Border affect for the duoInfo*/
+/*Start of duoInfo CSS*/
+/*dunoInfo css to make it look clean and professional.*/
 
 .duoInfo{
     color: var(--about-color);
     font-weight: bolder;
     border: 4px  solid var(--about-color);
     border-radius: 15px;
-    padding: 40px;
-    width: 700px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 70px;
+    width: 750px;
     position: relative;
 }
 
 .duoInfo h1{
     font: 40px / 1.1em  'opensans-bold', sans-serif;
     font-weight: bold;
+    color: lightgrey;
 }
 
 .duoInfo p{
+    color: lightgrey;
     font-size: 1.1em;
 }
 
 .duoInfo a{
-    color: var(--about-color);
+    color: lightgrey;
 }
+
+.duoInfo button img{
+    display: flex;
+    height: 45px;
+    width: 45px;
+}
+
+/*End of duoInfo CSS*/
+
+/*Start of Scroller CSS*/
+/*Scrollers should have own CSS to ensure it looks good and have
+  The outcome I would like.*/
 
 #nextSlide {
     position: absolute;
@@ -168,9 +191,27 @@ nav ul li a:hover{
     background-color: var(--about-color);
 }
 
-.duoInfo button img{
-    display: flex;
-    height: 45px;
-    width: 45px;
+#prevSlide {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--secondBack-color);
+    color: var(--about-color);
+    padding: 15px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+    font: 40px / 1.1em  'opensans-bold', sans-serif;
 }
+  
+#prevSlide:hover {
+    background-color: var(--about-color);
+}
+
+/*End of Scroller CSS*/
+
+
   
