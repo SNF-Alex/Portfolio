@@ -8,6 +8,7 @@
     --hover-color: #007BFF;
     --about-color: #065a0d;
     --secondBack-color: #666666;
+    --thirdSec-color: #F5F5F5;
 }
 
 /*Smooth scroll affect for better looks*/
@@ -104,12 +105,85 @@ nav ul li a:hover{
     color: var(--hover-color);
 }
 
+/*SideBar with Hamburger*/
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--header-color);
+    display: block; 
+    position: fixed;
+    top: 0;
+    right: 32%;
+    z-index: 9999;
+}
+
+.menu-icon:hover {
+    color: var(--hover-color);
+}
+
+/* Style the Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    right: -250px; /* Hide the menu off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: right 0.3s ease;
+    padding-top: 60px; /* Space from top for links */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.close-btn:hover {
+    color: var(--hover-color);
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.side-menu ul li a:hover {
+    background-color: var(--hover-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Make menu icon visible on smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show hamburger icon on smaller screens */
+    }
+}
 /*Create Second part of the Website aka About page*/
 
 .second_section{
     background-color: #666666;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,4 +288,81 @@ nav ul li a:hover{
 /*End of Scroller CSS*/
 
 
-  
+/*Basic code for the third section to keep it aligned properly*/
+.third_section {
+    height: 50vh;
+    background-color: #f4f4f4;
+    align-content: center;
+}
+
+/*Start Education and Edubox CSS*/
+.education {
+    display: flex;
+    justify-content: space-between; 
+    justify-content: center;
+    gap: 150px;
+}
+
+/*Strenght Header*/
+.strHead{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+}
+
+.strHead h1{
+    padding-top: 50px;
+    font: 80px / 1.1em  'opensans-bold', sans-serif;
+}
+
+.eduBox h1{
+    font: 40px / 1.1em  'opensans-bold', sans-serif;
+    color: black;
+}
+
+.eduBox p{
+    color: black;
+}
+
+/*End Education and Edubox CSS*/
+
+/* Start of eduBox CSS animations */
+
+.eduBox {
+    background-color: #f4f4f4;
+    border: 6px solid transparent;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 1);
+    background-clip: padding-box;
+    animation: borderAnimation 20s linear infinite; 
+}
+
+/* Animation for the border using border-image */
+@keyframes borderAnimation {
+    0% {
+        border-image: linear-gradient(45deg, #007BFF, #d0eaff) 1;
+    }
+    25% {
+        border-image: linear-gradient(45deg, #d0eaff, #007BFF) 1;
+    }
+    50% {
+        border-image: linear-gradient(45deg, #007BFF, #d0eaff) 1;
+    }
+    75% {
+        border-image: linear-gradient(45deg, #d0eaff, #007BFF) 1;
+    }
+    100% {
+        border-image: linear-gradient(45deg, #007BFF, #d0eaff) 1;
+    }
+}
+
+/* End of CSS animations */
+
+
