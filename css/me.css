@@ -9,6 +9,7 @@
     --about-color: #065a0d;
     --secondBack-color: #666666;
     --thirdSec-color: #F5F5F5;
+    --bar-color: #333;
 }
 
 /*Smooth scroll affect for better looks*/
@@ -290,8 +291,8 @@ nav ul li a:hover{
 
 /*Basic code for the third section to keep it aligned properly*/
 .third_section {
-    height: 50vh;
-    background-color: #f4f4f4;
+    height: 40vh;
+    background-color: var(--secondBack-color);
     align-content: center;
 }
 
@@ -305,25 +306,28 @@ nav ul li a:hover{
 
 /*Strenght Header*/
 .strHead{
-    background-color: #f4f4f4;
+    background-color: var(--secondBack-color);
+    color: var(--thirdSec-color);
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100px;
+    height: 10vh;
+    text-decoration: underline 2px;
 }
 
 .strHead h1{
-    padding-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font: 80px / 1.1em  'opensans-bold', sans-serif;
 }
 
 .eduBox h1{
     font: 40px / 1.1em  'opensans-bold', sans-serif;
-    color: black;
+    color: var(--thirdSec-color);
 }
 
 .eduBox p{
-    color: black;
+    color: var(--thirdSec-color);
 }
 
 /*End Education and Edubox CSS*/
@@ -331,7 +335,7 @@ nav ul li a:hover{
 /* Start of eduBox CSS animations */
 
 .eduBox {
-    background-color: #f4f4f4;
+    background-color: var(--secondBack-color);
     border: 6px solid transparent;
     padding: 30px;
     text-align: center;
@@ -365,4 +369,258 @@ nav ul li a:hover{
 
 /* End of CSS animations */
 
+/*Start of Last section - Life accomplisments*/
 
+/*
+
+#edu{
+    height: 100vh;
+}
+
+.eduAcc{
+    height: 20vh;
+    background-color: var(--thirdSec-color);
+    display: flex;
+    padding-left: 50vh;
+    padding-top: 12vh;
+}
+
+
+.top_life {
+    max-width: 30vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 40vh;
+}
+
+.eduHeader h1{
+    font: 35px / 28px 'opensans-bold', sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+}
+
+.eduInfo h1{
+    font: 30px / 28px 'opensans-bold', sans-serif;
+}
+
+.eduInfo p{
+    font: 16px / 24px 'librebaskerville-italic', serif;
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+}
+
+.skillInfo, .eduInfo{
+    border: 2px solid black;
+}
+
+.mid_life {
+    max-width: 30vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 40vh;
+}
+
+.skillAcc{
+    height: 66vh;
+    background-color: var(--thirdSec-color);
+    display: flex;
+    padding-left: 50vh;
+}
+
+.skillHeader h1{
+    font: 35px / 28px 'opensans-bold', sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+}
+
+.skillInfo h1{
+    font: 30px / 28px 'opensans-bold', sans-serif;
+}
+
+.skillInfo p{
+    font: 26px / 24px 'librebaskerville-italic', serif;
+    color: #6E7881;
+    margin-bottom: 18px;
+}
+
+.skill-bar {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50vh;
+}
+
+.skill-bar span {
+    font-size: 20px;
+    color: #6E7881;
+    padding-bottom: 10px;
+}
+
+
+.bar-container {
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.bar {
+    height: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+
+#python-bar {
+    background-color: var(--bar-color);
+    width: 75%;
+}
+
+#js-bar {
+    background-color: var(--bar-color);
+    width: 75%;
+}
+
+#html-bar {
+    background-color: var(--bar-color);
+    width: 85%;
+}
+
+#css-bar {
+    background-color: var(--bar-color);
+    width: 85%;
+}
+
+*/
+
+#edu{
+    height: 100vh;
+    background-color: var(--thirdSec-color);
+}
+
+.top_life, .mid_life {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 15vw;
+}
+
+/* Section styling for eduAcc and skillAcc without vertical centering */
+.eduAcc, .skillAcc {
+    display: flex;
+    justify-content: flex-start;  /* Align content to the left */
+    align-items: flex-start;  /* Align items at the top */
+}
+
+.eduAcc{
+    padding-top: 12vh;
+}
+
+.skillAcc{
+    padding-top: 10vh;
+}
+
+/* Header styling for eduHeader and skillHeader */
+.eduHeader h1{
+    font: 35px / 28px 'opensans-bold', sans-serif;
+    border-bottom: 1px solid var(--bar-color);
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+.skillHeader h1{
+    font: 35px / 28px 'opensans-bold', sans-serif;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--bar-color);
+    text-transform: uppercase;
+}
+
+.eduInfo h1{
+    font: 30px / 28px 'opensans-bold', sans-serif;
+}
+
+.eduInfo p{
+    font: 20px / 24px 'librebaskerville-italic', serif;
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+}
+
+.skillInfo h1{
+    font: 30px / 28px 'opensans-bold', sans-serif;
+}
+
+.skillInfo p{
+    font: 24px / 24px 'librebaskerville-italic', serif;
+    color: #6E7881;
+    margin-bottom: 18px;
+}
+
+.eduInfo, .skillInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.eduInfo{
+    border-bottom: 1px solid #333;
+}
+
+.skill-bar {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35vw;
+}
+
+.skill-bar span {
+    font-size: 20px;
+    color: #6E7881;
+    padding-bottom: 5px;
+}
+
+
+.bar-container {
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.bar {
+    height: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+
+#python-bar {
+    background-color: var(--bar-color);
+    width: 75%;
+}
+
+#js-bar {
+    background-color: var(--bar-color);
+    width: 75%;
+}
+
+#html-bar {
+    background-color: var(--bar-color);
+    width: 85%;
+}
+
+#css-bar {
+    background-color: var(--bar-color);
+    width: 85%;
+}
