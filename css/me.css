@@ -7,9 +7,12 @@
     --header-color: #d2f3fd;
     --hover-color: #007BFF;
     --about-color: #065a0d;
-    --secondBack-color: #666666;
+    --aboutBack-color: #c2c2c2;
+    --secondBack-color: #1c1c1c;
     --thirdSec-color: #F5F5F5;
+    --textColor-color: #c7c7c7;
     --bar-color: #333;
+    --strHead-color: #ededed;
 }
 
 /*Smooth scroll affect for better looks*/
@@ -182,7 +185,7 @@ nav ul li a:hover{
 /*Create Second part of the Website aka About page*/
 
 .second_section{
-    background-color: #666666;
+    background-color: var(--aboutBack-color);
     width: 100%;
     height: 50vh;
     display: flex;
@@ -211,7 +214,7 @@ nav ul li a:hover{
 .duoInfo{
     color: var(--about-color);
     font-weight: bolder;
-    border: 4px  solid var(--about-color);
+    border: 2px  solid var(--secondBack-color);
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 70px;
@@ -222,16 +225,16 @@ nav ul li a:hover{
 .duoInfo h1{
     font: 40px / 1.1em  'opensans-bold', sans-serif;
     font-weight: bold;
-    color: lightgrey;
+    color: var(--secondBack-color);
 }
 
 .duoInfo p{
-    color: lightgrey;
+    color: var(--secondBack-color);
     font-size: 1.1em;
 }
 
 .duoInfo a{
-    color: lightgrey;
+    color: var(--secondBack-color);
 }
 
 .duoInfo button img{
@@ -251,19 +254,24 @@ nav ul li a:hover{
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background-color: var(--secondBack-color);
-    color: var(--about-color);
-    padding: 15px 10px;
+    background-color: var(--aboutBack-color);
+    color: black;
+    padding: 0 0;
+    margin-right: 5px;
     border: none;
     cursor: pointer;
     font-size: 15px;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
     border-radius: 50%;
     font: 40px / 1.1em  'opensans-bold', sans-serif;
+    font-weight: bolder;
 }
   
 #nextSlide:hover {
-    background-color: var(--about-color);
+    top: 42%;
+    transform: scale(1.75);
+    margin-right: 11px;
+    color: var(--hover-color);
 }
 
 #prevSlide {
@@ -271,19 +279,24 @@ nav ul li a:hover{
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background-color: var(--secondBack-color);
-    color: var(--about-color);
-    padding: 15px 10px;
+    background-color: var(--aboutBack-color);
+    color: black;
+    padding: 0 0;
+    margin-left: 5px;
     border: none;
     cursor: pointer;
     font-size: 15px;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
     border-radius: 50%;
     font: 40px / 1.1em  'opensans-bold', sans-serif;
+    font-weight: bolder;
 }
   
 #prevSlide:hover {
-    background-color: var(--about-color);
+    top: 42%;
+    transform: scale(1.75);
+    margin-left: 11px;
+    color: var(--hover-color);
 }
 
 /*End of Scroller CSS*/
@@ -307,33 +320,48 @@ nav ul li a:hover{
 /*Strenght Header*/
 .strHead{
     background-color: var(--secondBack-color);
-    color: var(--thirdSec-color);
     display: flex;
     justify-content: center;
     align-content: center;
     height: 10vh;
-    text-decoration: underline 2px;
 }
 
 .strHead h1{
+    margin-top: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font: 80px / 1.1em  'opensans-bold', sans-serif;
-}
-
-.eduBox h1{
-    font: 40px / 1.1em  'opensans-bold', sans-serif;
-    color: var(--thirdSec-color);
-}
-
-.eduBox p{
-    color: var(--thirdSec-color);
+    font: 60px / 1.1em  'opensans-bold', sans-serif;
+    color: var(--strHead-color);
 }
 
 /*End Education and Edubox CSS*/
 
-/* Start of eduBox CSS animations */
+/*Edubox css*/
 
+.eduBox {
+    border: 6px solid transparent;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    
+}
+
+.eduBox h1{
+    font: 40px / 1.1em  'opensans-bold', sans-serif;
+    color: var(--strHead-color);
+    padding-bottom: 6px;
+}
+
+.eduBox p{
+    color: var(--textColor-color);
+    font: 16px / 1.1em  'Consolas', sans-serif;
+}
+
+/*eduBox CSS animations If wanted */
+
+/*
 .eduBox {
     background-color: var(--secondBack-color);
     border: 6px solid transparent;
@@ -348,7 +376,7 @@ nav ul li a:hover{
     animation: borderAnimation 20s linear infinite; 
 }
 
-/* Animation for the border using border-image */
+
 @keyframes borderAnimation {
     0% {
         border-image: linear-gradient(45deg, #007BFF, #d0eaff) 1;
@@ -366,6 +394,7 @@ nav ul li a:hover{
         border-image: linear-gradient(45deg, #007BFF, #d0eaff) 1;
     }
 }
+*/
 
 /* End of CSS animations */
 
