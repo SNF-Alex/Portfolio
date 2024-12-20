@@ -680,9 +680,9 @@ nav ul li a:hover{
 
     .eduBox {
         padding: 0px;
-        width: 80px;
+        width: 90px;
         height: 250px; 
-        margin-top: -10px;
+        margin-top: 0px;
     }
 
     .eduBox h1{
@@ -787,21 +787,45 @@ nav ul li a:hover{
 
     .eduBox {
         padding: 10px;
-        width: 215px;
+        width: 175px;
         height: 250px; 
         margin-top: -70px;
     }
 
     .eduBox h1{
-        font-size: 2.2rem;
+        font-size: 1.6rem;
     }
 
     .eduBox p{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .menu-icon {
         right: 24%;
+    }
+
+    .strHead{
+        height: 150px;
+    }
+
+    .eduAcc h1{
+        font-size: 1.6rem;
+    }
+
+    .skillAcc h1{
+        font-size: 1.6rem;
+    }
+
+    .second_section{
+        height: auto;
+    }
+
+    .third_section{
+        height: auto;
+    }
+
+    #edu{
+        height: auto;
     }
 }
 
