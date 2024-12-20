@@ -615,6 +615,10 @@ nav ul li a:hover{
         background-color: var(--aboutBack-color);
     }
 
+    *{
+        height: auto;
+    }
+
     header {
         left: 0;
         right: 0;
@@ -708,10 +712,15 @@ nav ul li a:hover{
 
 /* Tablets (481px - 768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    *{
+        height: auto;
+    }
+    
     header {
         left: 22%;
         right: 22%;
         padding: 15px;
+        height: auto;
     }
 
     nav ul li{
